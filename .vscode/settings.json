@@ -1,0 +1,29 @@
+{
+    "asciidoc.antora.showEnableAntoraPrompt": false,
+    "[asciidoc]": {
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 120
+    },
+    "[markdown]": {
+		"editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 120
+	},
+    "editor.rulers": [120],
+    "editor.tabSize": 4,
+    "cSpell.language": "ru,en",
+    "cSpell.maxNumberOfProblems": 5000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build/linux-x64",
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.md": "markdown",
+        "cstring": "cpp",
+        "memory": "cpp"
+    }
+}
