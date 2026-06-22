@@ -16,6 +16,9 @@
     <Filter Include="Documentation">
       <UniqueIdentifier>{acc4f146-2c84-47f5-b926-4d98f0d4456a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shell scripts">
+      <UniqueIdentifier>{db7caa36-d03c-4ee4-9576-41b749be1f6c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\libmain.cpp">
@@ -41,6 +44,15 @@
     </None>
     <None Include="..\..\README_RU.md">
       <Filter>Documentation</Filter>
+    </None>
+    <None Include="release_pack-x64.bat">
+      <Filter>Shell scripts</Filter>
+    </None>
+    <None Include="release_pack-x86.bat">
+      <Filter>Shell scripts</Filter>
+    </None>
+    <None Include="write_build_no.bat">
+      <Filter>Shell scripts</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -15,7 +15,7 @@
  *  and limitations under the License.
  *
  *  The Original Code was created by Simonov Denis
- *  for the open source project "IBSurgeon Http Client UDR".
+ *  for the open source project "IBSurgeon UUID v7 UDR".
  *
  *  Copyright (c) 2023-2026 Simonov Denis <sim-mail@list.ru>
  *  and all contributors signed below.
@@ -36,12 +36,12 @@ namespace
     constexpr size_t UUID_SIZE = 16;
 }
 
- /*
+/*
    FUNCTION GEN_UUID_V7 ()
    RETURNS BINARY(16)
    EXTERNAL NAME 'uuidv7!gen_uuid_v7'
    ENGINE UDR;
- */
+*/
 
 FB_UDR_BEGIN_FUNCTION(gen_uuid_v7)
 

@@ -123,6 +123,15 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+        <PreBuildEvent>
+      <Command>write_build_no.bat &gt; ..\..\src\udr_build_no.h</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Generate build number</Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>release_pack-x86.bat "$(SolutionDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -161,6 +170,15 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+        <PreBuildEvent>
+      <Command>write_build_no.bat &gt; ..\..\src\udr_build_no.h</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Generate build number</Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>release_pack-x64.bat "$(SolutionDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\libmain.cpp" />
@@ -175,6 +193,9 @@
   <ItemGroup>
     <None Include="..\..\README.md" />
     <None Include="..\..\README_RU.md" />
+    <None Include="release_pack-x64.bat" />
+    <None Include="release_pack-x86.bat" />
+    <None Include="write_build_no.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
