@@ -28,6 +28,7 @@
 
 #include <array>
 #include <chrono>
+#include <cstring>
 #include <random>
 
 namespace
